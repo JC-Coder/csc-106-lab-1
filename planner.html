@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joseph Chimezie's interactive academic task planner.">
+    <title>Academic Planner | Joseph Chimezie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/planner.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- header start -->
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html" aria-label="Joseph Chimezie homepage">
+          <span class="brand-mark" aria-hidden="true">JC</span>
+          <span class="brand-name">Joseph Chimezie</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="projects.html">Projects</a></li>
+            <li><a class="nav-link active" href="planner.html" aria-current="page">Planner</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header end -->
+
+    <main id="main-content">
+
+      <!-- planner introduction section start -->
+
+      <section class="page-hero compact-page-hero">
+        <div class="container page-hero-layout">
+          <div>
+            <p class="section-label">Academic planner</p>
+            <h1>Keep track of study tasks.</h1>
+          </div>
+          <p class="page-hero-introduction">
+            Add a task, mark it as completed, or remove it when it is no longer needed.
+          </p>
+        </div>
+      </section>
+
+      <!-- planner introduction section end -->
+
+      <!-- task planner section start -->
+
+      <section class="planner-section" aria-labelledby="task-form-title">
+        <div class="container planner-panel">
+          <h2 id="task-form-title">My tasks</h2>
+          <form id="task-form" class="task-form" novalidate>
+            <div class="task-field">
+              <label for="task-input">Task description</label>
+              <input
+                id="task-input"
+                name="task"
+                type="text"
+                placeholder="e.g. Finish web technology assignment"
+                aria-describedby="task-error"
+              >
+              <p id="task-error" class="field-error" aria-live="polite"></p>
+            </div>
+            <button class="button button-primary" type="submit">Add task</button>
+          </form>
+
+          <p id="empty-tasks" class="empty-message">No tasks added yet.</p>
+
+          <!-- Task list, will be populated by JavaScript -->
+          <ul id="task-list" class="task-list" aria-label="Academic tasks"></ul>
+        </div>
+      </section>
+
+      <!-- task planner section end -->
+
+    </main>
+
+    <!-- footer start -->
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <a class="brand footer-brand" href="index.html">
+            <span class="brand-mark" aria-hidden="true">JC</span>
+            <span class="brand-name">Joseph Chimezie</span>
+          </a>
+          <p>Student portfolio and academic management website.</p>
+        </div>
+        <div class="footer-meta">
+          <a href="mailto:c.chimezie8247@miva.edu.ng">c.chimezie8247@miva.edu.ng</a>
+          <p>&copy; <span id="current-year">2026</span> Joseph Chimezie.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+  </body>
+</html>

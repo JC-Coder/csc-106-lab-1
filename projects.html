@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Selected software projects built by Joseph Chimezie."
+    >
+    <title>Projects | Joseph Chimezie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- header start -->
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html" aria-label="Joseph Chimezie homepage">
+          <span class="brand-mark" aria-hidden="true">JC</span>
+          <span class="brand-name">Joseph Chimezie</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link active" href="projects.html" aria-current="page">Projects</a></li>
+            <li><a class="nav-link" href="planner.html">Planner</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header end -->
+
+    <main id="main-content">
+
+      <!-- projects introduction section start -->
+
+      <section class="page-hero compact-page-hero">
+        <div class="container page-hero-layout">
+          <div>
+            <p class="section-label">My projects</p>
+            <h1>Things I've built.</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- projects introduction section end -->
+
+      <!-- project showcase section start -->
+
+      <section class="projects-section" aria-label="Project showcase">
+        <div class="container projects-grid">
+          <article class="project-card">
+            <img
+              src="assets/images/db-mover-screenshot.png"
+              alt="Screenshot of the DB Mover website"
+            >
+            <div class="project-content">
+              <h2>DB Mover</h2>
+              <p>
+                An open-source tool that simplifies moving and synchronizing database data
+                between different environments.
+              </p>
+              <ul class="project-tools" aria-label="DB Mover technologies">
+                <li>TypeScript</li>
+                <li>Node.js</li>
+                <li>Databases</li>
+              </ul>
+              <a
+                class="project-link"
+                href="https://db-mover.jccoder.xyz/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View project <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="assets/images/my-scratchpad-screenshot.png"
+              alt="Screenshot of the MyScratchPad extension"
+            >
+            <div class="project-content">
+              <h2>MyScratchPad</h2>
+              <p>
+                A VS Code extension for keeping quick, persistent notes and code snippets
+                without leaving the editor.
+              </p>
+              <ul class="project-tools" aria-label="MyScratchPad technologies">
+                <li>TypeScript</li>
+                <li>VS Code API</li>
+                <li>Webview</li>
+              </ul>
+              <a
+                class="project-link"
+                href="https://marketplace.visualstudio.com/items?itemName=jccoder.myscratchpad"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View project <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="assets/images/portify-screenshot.png"
+              alt="Screenshot of the Portify website"
+            >
+            <div class="project-content">
+              <h2>Portify</h2>
+              <p>
+                A configuration-driven tool that generates developer portfolio websites
+                and professional résumé documents.
+              </p>
+              <ul class="project-tools" aria-label="Portify technologies">
+                <li>TypeScript</li>
+                <li>Web development</li>
+                <li>PDF generation</li>
+              </ul>
+              <a
+                class="project-link"
+                href="https://portify.jccoder.xyz/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View project <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- project showcase section end -->
+
+      <!-- project video section start -->
+
+      <section class="project-video-section" aria-labelledby="video-title">
+        <div class="container video-layout">
+          <div>
+            <p class="section-label">Project video</p>
+            <h2 id="video-title">Portify Website</h2>
+            <p>A short preview showing the portify website and its features.</p>
+          </div>
+          <video controls preload="metadata">
+            <source
+              src="https://pub-247382da781146e3b6ec590edebded92.r2.dev/portify/portify-preview.mp4"
+              type="video/mp4"
+            >
+            Your browser does not support the video element.
+          </video>
+        </div>
+      </section>
+
+      <!-- project video section end -->
+
+    </main>
+
+    <!-- footer start -->
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <a class="brand footer-brand" href="index.html">
+            <span class="brand-mark" aria-hidden="true">JC</span>
+            <span class="brand-name">Joseph Chimezie</span>
+          </a>
+          <p>Student portfolio and academic management website.</p>
+        </div>
+        <div class="footer-meta">
+          <a href="mailto:c.chimezie8247@miva.edu.ng">c.chimezie8247@miva.edu.ng</a>
+          <p>&copy; <span id="current-year">2026</span> Joseph Chimezie.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+  </body>
+</html>
